@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Drawing.Drawing2D;
 
-namespace WinFormsApp3
+namespace MyBusinessCard
 {
     public partial class Form1 : Form
     {
@@ -19,7 +19,7 @@ namespace WinFormsApp3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            pictureBox1.Image = Properties.Resources.photo1;
+            pictureBox1.Image = MyBusinessCard.Properties.Resources.photo1;
 
             GraphicsPath path = new GraphicsPath();
             path.AddArc(0, 0, 40, 40, 180, 90);
@@ -50,9 +50,9 @@ namespace WinFormsApp3
         private void button2_Click(object sender, EventArgs e)
         {
             if (isPhoto1)
-                pictureBox1.Image = Properties.Resources.photo2;
+                pictureBox1.Image = MyBusinessCard.Properties.Resources.photo2;
             else
-                pictureBox1.Image = Properties.Resources.photo1;
+                pictureBox1.Image = MyBusinessCard.Properties.Resources.photo1;
 
             isPhoto1 = !isPhoto1;
         }
